@@ -1,3 +1,3 @@
 # goodMovies
 Created with CodeSandbox
-this App helps suggests GoodMovies of different genre
+this App suggests GoodMovies of different genre
