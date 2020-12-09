@@ -119,30 +119,34 @@ export default function App() {
           >
             <li
               style={{
-                border: "1px solid ",
+                border: "1px solid black",
                 borderRadius: "0.5rem",
-                padding: "0.5rem 1.5rem",
-                textAlign: "center",
-                width: "10%",
-                backgroundColor: "pink",
-                color: "black",
-                margin: "Auto",
-                fontWeight: "bold"
+                padding: "1rem 2rem",
+                textAlign: "right",
+                backgroundColor: "rgb(156, 223, 62)"
               }}
             >
-           
-              <div>
-                <span>{data.MovieName}</span>
-              </div>
+              <div style={{ textAlign: "center" }}>
+                <div
+                  style={{
+                    padding: "0.5rem",
+                    fontSize: "larger",
+                    fontWeight: "bold"
+                  }}
+                >
+                  Movie : {data.MovieName}
+                </div>
 
-              <div
-                style={{
-                  paddingTop: "0.5rem"
-                }}
-              >
-                <span>{data.Rating}</span> {" "}
+                <div
+                  style={{
+                    padding: "0.5rem",
+                    fontSize: "larger"
+                  }}
+                >
+                  Ratings :{" "}
+                  <span style={{ fontWeight: "bold" }}>{data.Rating}</span>{" "}
+                </div>
               </div>
-                      
             </li>
           </ul>
         );
