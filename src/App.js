@@ -107,6 +107,46 @@ export default function App() {
           </button>
         );
       })}
+
+      {dataBase[movie].map((data) => {
+        return (
+          <ul
+            style={{
+              listStyle: "none",
+              padding: "1rem",
+              margin: "auto"
+            }}
+          >
+            <li
+              style={{
+                border: "1px solid ",
+                borderRadius: "0.5rem",
+                padding: "0.5rem 1.5rem",
+                textAlign: "center",
+                width: "10%",
+                backgroundColor: "pink",
+                color: "black",
+                margin: "Auto",
+                fontWeight: "bold"
+              }}
+            >
+           
+              <div>
+                <span>{data.MovieName}</span>
+              </div>
+
+              <div
+                style={{
+                  paddingTop: "0.5rem"
+                }}
+              >
+                <span>{data.Rating}</span> {" "}
+              </div>
+                      
+            </li>
+          </ul>
+        );
+      })}
     </div>
   );
 }
